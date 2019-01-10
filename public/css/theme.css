@@ -159,6 +159,12 @@ p#date{
 .version-dropdown {
   margin-top: 20px;
 }
+
+td.highlight {
+  background: #fbddd3;
+  border-left: 2px solid #e95420;
+}
+
 @font-face {
   font-family: 'GothamSSm';
   src: url('hinted-GothamSSm-Light.eot');

@@ -273,7 +273,11 @@ function start() {
         assets.files.map(function (fileName, index) {
           var fileExtension = path.extname(fileName);
           var fileType = fileExtension.substring(1) || 'unknown';
-          fileArray.push({ name: fileName, fileType: fileType });
+          fileArray.push({
+            name: fileName,
+            fileType: fileType,
+            highlight: (fileName===library.filename?'highlight':'')
+          });
         });
 
         assets.files = fileArray;
