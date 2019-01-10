@@ -160,16 +160,16 @@ p#date{
   margin-top: 20px;
 }
 
-tr.default_file {
+tr.defaultFile {
   background: #fff5f2;
   border-left: 4px solid #e95420;
 }
 
-tr.default_file td:first-child {
+tr.defaultFile td:first-child {
   position: relative;
 }
 
-tr.default_file td:first-child::before {
+tr.defaultFile td:first-child::before {
   content: 'This file has been marked as the default file for this library';
   position: absolute;
   left: .5em;
@@ -186,7 +186,7 @@ tr.default_file td:first-child::before {
   transition: opacity .2s;
 }
 
-tr.default_file:hover td:first-child::before {
+tr.defaultFile:hover td:first-child::before {
   opacity: 1;
 }
 
