@@ -160,9 +160,34 @@ p#date{
   margin-top: 20px;
 }
 
-td.highlight {
-  background: #fbddd3;
-  border-left: 2px solid #e95420;
+tr.default_file {
+  background: #fff5f2;
+  border-left: 4px solid #e95420;
+}
+
+tr.default_file td:first-child {
+  position: relative;
+}
+
+tr.default_file td:first-child::before {
+  content: 'This file has been marked as the default file for this library';
+  position: absolute;
+  left: .5em;
+  top: -1em;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  padding: .25em .5em;
+  font-size: 12px;
+  min-width: 300px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+tr.default_file:hover td:first-child::before {
+  opacity: 1;
 }
 
 @font-face {

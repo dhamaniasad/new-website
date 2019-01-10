@@ -276,7 +276,7 @@ function start() {
           fileArray.push({
             name: fileName,
             fileType: fileType,
-            highlight: (fileName===library.filename?'highlight':'')
+            default_file: (fileName===library.filename?'default_file':'')
           });
         });
 
