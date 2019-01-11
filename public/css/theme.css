@@ -131,6 +131,8 @@ p#date{
   height: 100px;
 }
 #search-box {
+  height: 46px;
+  font-size: 16px;
   margin: 0px 0 15px 0;
 }
 .container.home {
