@@ -1,6 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: #ebebeb; /* same as logo */
 }
 
 .footer {
@@ -8,6 +9,7 @@ html {
   bottom: 0;
   padding: 10px 0;
   width: 100%;
+  border-top: 2px solid #dd4814;
   background-color: #f5f5f5;
   color: #6b6b6b;
 }
@@ -19,6 +21,7 @@ html {
 body {
   margin-bottom: 50px;
   overflow-y: scroll;
+  background-color: inherit;
 }
 
 .page {
