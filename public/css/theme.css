@@ -106,6 +106,10 @@ p#date{
   background: none;
 }
 
+tbody {
+  border: 1px solid #ddd;
+}
+
 .label-highlight a {
   color: white !important;
  }
