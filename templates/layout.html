@@ -102,8 +102,12 @@
         <p class="text-muted">
           Donate CDNJS $5 on <a href="https://www.bountysource.com/teams/cdnjs" target="_blank">Bountysource</a> or become a contributor on <a href="https://github.com/cdnjs/cdnjs" target="_blank"><i class="fa fa-github"></i> GitHub</a> to make the project better and better!
           <span class="pull-right">
+            <a href="https://status.cdnjs.com" target="_blank" class="status">
+              <span class="status-color-dot"></span>
+              <span class="status-color-description"></span>
+            </a>
             <a href="https://twitter.com/cdnjs" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
-            &nbsp; <a href="https://cdnjs.discourse.group/" target="_blank"><i class="fa fa-comments"></i> Discourse</a>
+            <a href="https://cdnjs.discourse.group/" target="_blank"><i class="fa fa-comments"></i> Discourse</a>
           </span>
         </p>
       </div>
@@ -141,6 +145,17 @@ $('.post code').addClass('hljs');
 $('.post').show();
     </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js" integrity="sha256-t2YrqZoTLq/Qt8zIw0BMiuRC2X5+a3O7PODU8RwoyYw=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
+  <script defer>
+    var sp = new StatusPage.page({page: '1fkb7yl9sw87'});
+    sp.status({
+      success: function(data) {
+        $('.status-color-description').text(data.status.description);
+        $('.status-color-dot').addClass(data.status.indicator);
+      }
+    });
+  </script>
 
 <script defer>hljs.initHighlightingOnLoad();</script>
 <div itemscope itemtype="https://schema.org/WebSite" style="display:none">
