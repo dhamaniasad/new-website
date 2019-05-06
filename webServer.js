@@ -499,7 +499,8 @@ function start() {
           disqus_id: tutorialPackage.disqus_url || req.originalUrl,
           author: tutorialPackage.author,
           tutorials: tutorialPackages,
-          library: library
+          library: library,
+          breadcrumbList: res.breadcrumbList
         }
       }
     }));

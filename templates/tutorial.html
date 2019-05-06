@@ -1,3 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ol class="breadcrumb text-muted" itemscope itemtype="http://schema.org/BreadcrumbList">
+        {{#breadcrumbList}}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="{{url}}" {{#last}}class="text-muted" {{/last}}>
+          <span itemprop="name">{{index}}</span></a>
+          <meta itemprop="position" content="{{position}}"/>
+        </li>
+        {{/breadcrumbList}}
+      </ol>
+    </div>
+  </div>
+</div>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"
       integrity="sha256-k5mFes0QrsMTUCIg7sRlizkZIhMeL4fTABLlkjQmR0s=" crossorigin="anonymous"/>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400' rel='stylesheet'
